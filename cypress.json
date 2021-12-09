@@ -1,0 +1,15 @@
+{
+  "testFiles": "**/*.feature",
+  "projectId": "xgwba7",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions":{
+    "reporterEnabled": "mochawesome",
+    "mochawesomereporterOptions": {
+      "reportDir" : "cypress/reports/mocha",
+      "quite" : true,
+      "overwrite": false,
+      "html": false,
+      "json": true
+    }
+  } 
+}

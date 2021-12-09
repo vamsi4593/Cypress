@@ -1,0 +1,121 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-12-09T00:54:41.461Z",
+    "end": "2021-12-09T00:55:26.012Z",
+    "duration": 44551,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "14597e19-1c80-4445-b62a-09feedf1942c",
+      "title": "",
+      "fullFile": "cypress/integration/Nikon.feature",
+      "file": "cypress/integration/Nikon.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "63ef0079-e036-4544-a770-62eace8b9dfd",
+          "title": "Nikon Search",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Search Nikon In Amazon Website",
+              "fullTitle": "Nikon Search Search Nikon In Amazon Website",
+              "timedOut": null,
+              "duration": 26997,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "c6f0cfc2-dee0-44a6-9df8-e627842a1b80",
+              "parentUUID": "63ef0079-e036-4544-a770-62eace8b9dfd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Sort , select and verify the selected Nikon",
+              "fullTitle": "Nikon Search Sort , select and verify the selected Nikon",
+              "timedOut": null,
+              "duration": 9808,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "c07cb432-c59f-44c8-9218-81acf489a43c",
+              "parentUUID": "63ef0079-e036-4544-a770-62eace8b9dfd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c6f0cfc2-dee0-44a6-9df8-e627842a1b80",
+            "c07cb432-c59f-44c8-9218-81acf489a43c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 36805,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default"
+      },
+      "version": "6.0.1"
+    }
+  }
+}

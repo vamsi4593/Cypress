@@ -1,0 +1,35 @@
+{
+  "name": "nordea_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "open": "cypress open",
+    "run dash" : "cypress run --record --key 889707aa-39e2-4150-adfa-3ec212004307",
+    "script": "cypress run cypress/integration",
+    "cleanreports" : "rm -R -f nordea_test/cypress/reports && mkdir nordea_test/cypress/reports && nordea_test/cypress/reports/mochareports",
+    "pretests" : "npm run cleanreports",
+    "combine-reports" : "mochawesome-merge nordea_test/cypress/mocha/reports/*.json > nordea_test/cypress/reports/mochareports/report.json",
+    "generate-report" : "merge nordea_test/cypress/reports/mochareports/report.json -f report -o nordea_test/cypress/reports/mochareports",
+    "posttest" : "npm run combine-reports && npm run generate-report",
+    "test" : "npm run pretests ||npm run script || npm run posttest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.1.0",
+    "cypress-cucumber-preprocessor": "^4.3.0",
+    "cypress-multi-reporters": "^1.5.0",
+    "cypress-xpath": "^1.6.2",
+    "mocha": "^9.1.3",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.0.1",
+    "typescript": "^4.5.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "step_definitions": "cypress/integration/Nikon",
+    "nonGlobalStepDefinitions": true
+  }
+}

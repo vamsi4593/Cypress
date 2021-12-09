@@ -1,0 +1,15 @@
+{
+  "click_product" : "//div[@id='a-page']//span[@class='celwidget slot=MAIN template=SEARCH_RESULTS widgetId=search-results_2']//div[@class='a-section a-spacing-none']//div[@class='a-section a-spacing-none']//span[1]",
+  "verify_product_page" : "//*[@id='feature-bullets']/h1",
+  "verify_gift_card_page" : "//*[@id='gc-detail-page-center-column']/h1",
+  "animated_design_button" : "//*[@id='gc-customization-type-button-Animated']",
+  "design_title" : "//span[@id='gc-design-title']",
+  "design_card" : "//button[@id='gc-mini-design-thumb-",
+  "to_address" : "//*[@id='gc-order-form-recipients']",
+  "from_address" : "//*[@id='gc-order-form-senderName']",
+  "quantity_number" : "//*[@id='gc-order-form-quantity']",
+  "calendar_input" : "//*[@id='gc-order-form-date']/div[2]/div/div/div/span",
+  "date_picker" : "//*[@id='gc-order-form-date']/div[2]/div/div/div/span",
+  "add_to_cart" : "//*[@id='gc-buy-box-atc']",
+  "item_count_cart" : "//*[@id='nav-cart-count']"
+}
