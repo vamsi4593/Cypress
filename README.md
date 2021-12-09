@@ -26,10 +26,10 @@ Plugins
 Support
 Additionally Screenshots and Video folders will be created after the test runs
 
-Test data , test Urls should be provided as json files in **Fixtures** 
-Test Cases(Spec files ) and Cucumber(feature files) should be created in **Integration**
-All the dependent plugins used in should be added to index.js in **Plugins**
-Custom commands if created they should in mentioned in command.js under **Support** 
+Test data , test Urls should be provided as json files in **Fixtures** .
+Test Cases(Spec files ) and Cucumber(feature files) should be created in **Integration** .
+All the dependent plugins used in should be added to index.js in **Plugins** .
+Custom commands if created they should in mentioned in command.js under **Support**  .
 
 Plugins Used :
 cucumber-cypress-preprocessor 
