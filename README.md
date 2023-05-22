@@ -1,4 +1,4 @@
-# Nordea_Test_Assignment
+# Cypress
 This repository consist of test automation script for 
 Test Case 1 :
 - Search Nikon and sort results from highest price to lowest.
